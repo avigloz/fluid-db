@@ -49,14 +49,14 @@ work in a FluidDB context, starting from when I land in region B:
 
 At this point, the node in region B can either:
 - reference a log included with query which has info the most-recently-used node
-- as a fallback, to a subset of all nodes until it finds most-recently-written data the user needs in that moment.
+- as a fallback, talk to a subset of all nodes until it finds most-recently-written data the user needs in that moment.
 
-In any case, as soon as data is written, it is set to expire (lets say, within 7 days).
+In any case, as soon as data is written, it is set to expire (lets say, within 7 days by default).
 
 >So, in order to learn about me, the node in region B pings the node in region A for my session info.
 ><br>Every other piece of data I need is communicated to and stored in the region B node, as needed.*
 
-Unless explicitly disabled, data dependent on other data (for example, if a reference to a different object is stored on requested object(s)) is collected 
+Unless explicitly disabled, data dependent on other data (e.g if a reference to a different object is stored on requested object(s)) is collected 
 in a depth-first fashion to ensure functionality.
 
 This data still exists in region A, much of it being the most recent version, but eventually some of this
