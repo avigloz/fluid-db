@@ -57,7 +57,7 @@ In any case, as soon as data is written, it is set to expire (lets say, within 7
 ><br>Every other piece of data I need is communicated to and stored in the region B node, as needed.*
 
 Unless explicitly disabled, data dependent on other data (e.g if a reference to a different object is stored on requested object(s)) is collected 
-in a depth-first fashion to ensure functionality.
+in a depth-first fashion to ensure functionality.*
 
 This data still exists in region A, much of it being the most recent version, but eventually some of this
 data will be come obsolesced by new data. Keeping it up to date (or at all) is unnecessary unless I return to region A.
