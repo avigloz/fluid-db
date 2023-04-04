@@ -77,7 +77,7 @@ but it wasn't updated and hasn't yet expired.
 
 Generally and relatively speaking, it's a lot more lightweight and far cheaper. Nodes only store data needed to cater to local clients, and really nothing more (for long).
 
-As long a user's data reliably moves between nodes in a timely manner a user never has to worry about "losing data" unless they do not make contact (R/W) with any node
+As long a user's data reliably moves between nodes in a timely manner, a user never has to worry about "losing data" unless they do not make contact (R/W) with any node
 prior to their data expiring. Local expiration is reset/extended upon read or writes.
 
 ### Considerations
