@@ -3,6 +3,11 @@ Proof of concept for a NoSQL DB that replicates data lazily, maintaining only a 
 
 **Currently in an unusable state/code is unavailable.**
 
+The following things will be included here eventually:
+- A basic intermediate server (without caching)
+- A database implementation (including socket and direct communication replication)
+- A basic client app
+
 ## Explanation
 
 Consider the following scenario, which is pretty common:
