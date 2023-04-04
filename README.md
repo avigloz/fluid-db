@@ -82,8 +82,6 @@ prior to their data expiring. Local expiration is reset/extended upon read or wr
 
 ### Considerations
 
-* Of course, this is design-dependent. You may choose to load all client data at once. In any case, your use case should anticipate
+*: Of course, this is design-dependent. You may choose to load all client data at once. In any case, your use case should anticipate
 that after a certain amount of time, all client-specific data in region A pertaining to me will be deleted. As such, there is no true redundancy
-When I return from region B, the node in region A will ask region B for data, and while 
-
-** That said, it may introduce certain issues for inter-client data sharing. Nothing a cache can't solve, though.
+When I return from region B, the node in region A will ask region B for data, and eventually region B will forget I ever existed (unless someone else asks for my data, like a post I made).
