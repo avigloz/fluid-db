@@ -36,7 +36,7 @@ more engineering effort or additional architectural considerations.
 ### How does FluidDB differ from other NoSQL implementations?
 
 The main differences are as follows:
-- No long-term redundancy (by default)
+- No long-term or global/widespead redundancy (by default)
 - Lazy availibility
 
 ### What the #$&^?
