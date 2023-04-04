@@ -6,7 +6,7 @@ Proof of concept for a NoSQL DB that replicates data lazily, maintaining only a 
 The following things will be included here eventually:
 - A basic intermediate server (without caching)
 - A database implementation (including socket and direct communication replication, and expiration)
-- A basic client app
+- A basic client app (for testing replication)
 
 ## Explanation
 
